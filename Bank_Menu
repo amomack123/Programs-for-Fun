@@ -1,0 +1,33 @@
+import java.util.*;
+public class Bank_Menu {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("1. Deposit\n2. Withdraw\n3. Balance Enquiry");
+		System.out.println("\nPlease select the initial amount");
+		double new_amount, initial;
+		initial = sc.nextDouble();
+		System.out.println("\nPlease select your option");
+		int option; 
+		option = sc.nextInt();
+		switch(option)
+		{
+		
+		case 1: System.out.println("Please type the amount to be deposited");
+		new_amount=sc.nextDouble();
+		System.out.println("Your new amount is " + (new_amount+initial));
+		break;
+		
+		case 2: System.out.println("Please type the amount to be extracted");
+		new_amount=sc.nextDouble();
+		System.out.println("Your new amount is " + (initial-new_amount));
+		break;
+		
+		case 3: System.out.println("This is your amount " + initial);
+		break;
+		default: System.out.println("Invalid choice");
+		break;
+		}
+	}
+
+}
