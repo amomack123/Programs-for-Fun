@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Bat_Avg {
+
+	public static void main(String[] args) {
+		
+		double avg;
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Enter the total runs of the batsman: ");
+		String runs = sc.nextLine();
+		
+		System.out.print("Enter the total number of innings of the batsman: ");
+		String inn= sc.nextLine();
+		
+		avg=(Integer.parseInt(runs)/Integer.parseInt(inn));
+		System.out.print("The batting average of the batsman is "+avg);
+
+
+	}
+
+}
