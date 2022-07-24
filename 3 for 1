@@ -1,0 +1,6 @@
+def paper_doll(string):
+    x=list(string)
+    for i in range(len(x)):
+        print(x[i]*3, end="")
+paper_doll('hell0o')
+#paper_doll('Mississippi')
