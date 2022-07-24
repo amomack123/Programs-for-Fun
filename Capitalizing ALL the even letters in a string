@@ -1,0 +1,10 @@
+def myfunc(word):
+    x=list(word)
+    i=0
+    for i in range(len(x)):
+        if i%2!=0:
+            x[i] = x[i].upper()
+        else:
+            x[i] = x[i].lower()
+    return(x)
+myfunc('Anthropomorphism')
