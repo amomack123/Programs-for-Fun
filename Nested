@@ -1,0 +1,30 @@
+import java.util.*;
+public class Nested {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String gender;
+		int age;
+		System.out.println("Hi Employee. Please choose your gender");
+		gender = sc.nextLine();
+		System.out.println("Hi Employee. Please list your age");
+		age = sc.nextInt();
+		
+		if (age>=35)
+		{
+			if (gender == "Female" || gender == "female" )
+			{
+				System.out.print("Congrats! You are insured");
+			}
+			else
+			{
+				System.out.print("You meet only 1 or 0 conditions. Sorry you do not get the bonus");
+			}
+		}
+		else 
+		{
+			System.out.print("You meet only 1 or 0 conditions. Sorry you do not get the bonus");
+		}
+	}
+
+}
