@@ -1,0 +1,19 @@
+def count_primes():
+    input1 = int(input("Enter "))
+    lst = list(range(1, input1 + 1))
+    # lst.remove(1)
+    print(lst)
+    new_list = lst
+    iterate = 1
+    while iterate <= ((input1/2)-1):
+        iterate += 1
+        answer = input1 % iterate
+        if answer == 0:
+            print(f"number is divisible by", {iterate})
+        else:
+            print(f"number is not divisible by", {iterate})
+    # for item in lst:
+    # new_list.pop()
+    # print(new_list)
+
+count_primes()
