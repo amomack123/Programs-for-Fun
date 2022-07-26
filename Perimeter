@@ -1,0 +1,19 @@
+import java.util.*;
+public class Perimeter {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		double Side;
+		System.out.print("Please enter the side of the square");
+		Side=sc.nextDouble();
+		if (Side<0)
+		{
+			System.out.print("The side of a square cannot be negative");
+		}
+		else
+		{
+			System.out.print("The perimeter of the square is " + Side*4 );
+		}
+	}
+
+}
