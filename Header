@@ -1,0 +1,17 @@
+from datetime import datetime
+
+now = datetime.now()
+
+current_time = now.strftime("%H:%M:%S")
+
+name = "Name"
+new_name = name.ljust(len(name) + 8)
+print(new_name, ": CNET-142 Amogh Maheshwari")
+
+lab = "Lab"
+new_lab = lab.ljust(len(lab) + 9)
+print(new_lab, ": Lab 3 - Interest Calculator")
+
+time = "Current Time :"
+new_time = time.ljust(len(time) + 0)
+print(new_time, current_time)
