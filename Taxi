@@ -1,0 +1,22 @@
+import java.util.*;
+public class Taxi {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		double km, money;
+		System.out.print("How many kilometers did you drive in the taxi?");
+		km=sc.nextDouble();
+		if (km<=50)
+		{
+			System.out.print("You owe me 20$. Please do visit again");
+		}
+		else
+		{
+			System.out.println("You made me drive a lot more. So you pay more");
+			money = (20+(km-50)*3);
+			money=money+(money*.1);
+			System.out.print("Your total taxifare comes out to be $" + money +". Thank You and Visit Again");
+		}
+	}
+
+}
