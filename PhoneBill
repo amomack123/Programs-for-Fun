@@ -1,0 +1,25 @@
+import java.util.*;
+public class Phone {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String name;
+		int time;
+		System.out.print("Hi, What is your name?");
+		name=sc.next();
+		System.out.print("What was your caller time?");
+		time=sc.nextInt();
+		if (time>50)
+		{
+			System.out.println("You went over your allocated caller time. Your rent has been increased to $25");
+			int bill = 25+(time-50);
+			System.out.print("Your total payment is $" + bill);
+		}
+		else
+		{
+			int bill=20+time;
+			System.out.print("Your total payment is $" + bill + "Thank you. Have a good day!");
+		}
+	}
+
+}
