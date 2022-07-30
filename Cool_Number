@@ -1,0 +1,19 @@
+import java.util.*;
+public class Cool_Number {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num;
+		System.out.print("Give me your number and I will tell you if its cool or not :)");
+		num=sc.nextInt();
+		if (num%3==1 && num%4==1 && num%5==1 && num%6==1)
+		{
+			System.out.print("Hey! Your number is cool.");
+		}
+		else
+		{
+			System.out.print("Your number is NOT cool. Weh!");
+		}
+	}
+
+}
