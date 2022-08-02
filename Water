@@ -1,0 +1,24 @@
+import java.util.*;
+public class Water {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		double temp;
+		System.out.println("Tell me the temperature of your room");
+		temp = sc.nextDouble();
+		if(temp>100)
+		{
+			System.out.print("Vapor");
+		}
+		else if(temp<=0)
+		{
+			System.out.print("Ice");
+		}
+		else
+		{
+			System.out.print("Water");
+		}
+
+	}
+
+}
